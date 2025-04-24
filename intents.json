@@ -1,0 +1,128 @@
+{
+    "intents": [
+        {
+            "tag": "Saludo",
+            "patterns": [
+                "hola",
+                "buenos dias",
+                "buenas tardes",
+                "buenas noches",
+                "holi",
+                "ola",
+                "hi",
+                "buenas"
+            ],
+            "responses": [
+                "¿En que puedo ayudarte hoy?"
+            ],
+            "buttons": [
+                {
+                    "text": "Horarios",
+                    "value": "horarios"
+                },
+                {
+                    "text": "Informacion General",
+                    "value": "informacion general"
+                },
+                {
+                    "text": "Inscripciones",
+                    "value": "inscripciones"
+                },
+                {
+                    "text": "Modalidades",
+                    "value": "modalidades de estudio"
+                }
+            ]
+        },
+        {
+            "tag": "Inscripciones",
+            "patterns": [
+                "inscripciones",
+                "cuando inician las inscripciones",
+                "fecha de inscripcion"
+            ],
+            "responses": [
+                "Inscripciones abiertas hasta el <b>31 de agosto</b>, día de inicio de clase <b>2 de septiembre</b>, periodo <b>2025-C</b>, <b>CUPOS LIMITADOS</b>"
+            ],
+            "buttons": [
+                {
+                    "text": "Requisitos",
+                    "value": "requerimientos"
+                },
+                {
+                    "text": "Volver",
+                    "value": "hola"
+                }
+            ]
+        },
+        {
+            "tag": "Modalidades",
+            "patterns": [
+                "modalidades de estudio",
+                "modalidades?"
+            ],
+            "responses": [
+                "<b>Modalidades de estudio </b>\n\n<u>Modalidad semipresencial o bimodal:</u>\nEnfermeria, informática, preescolar, control de calidad, electrónica, producción industrial, administración de empresas, administración mención: contabilidad y finanzas\n\n<i>En el caso semi presencial dispones de los turnos: mañana, tarde y noche con presencialidad el dia sábado. </i>\n\n<u>Modalidad 100% virtual:</u>\nInformática, administración de empresas, administración mención: contabilidad y finanzas. Turnos mañana, tarde y noche \n\n<b>Modalidad presencial todas las carreras en los turnos mañana, tarde y noche</b>"
+            ],
+            "buttons": [
+                {
+                    "text": "Volver",
+                    "value": "hola"
+                }
+            ]
+        },
+        {
+            "tag": "Requisitos",
+            "patterns": [
+                "requerimientos",
+                "que piden para inscribirse?",
+                "documentos que piden?",
+                "requisitos para la inscripcion?",
+                "requisitos"
+            ],
+            "responses": [
+                "<b>REQUISITOS</b>\n\nORIGINAL Y COPIA DE PARTIDA DE NACIMIENTO, CEDULA DE IDENTIDAD, TÍTULO DE BACHILLER,  NOTAS CERTIFICADAS  DE BACHILLER,  FONDO NEGRO DEL TÍTULO DE BACHILLER,  INSCRIPCION EN OPSU  O RUSNIES, 2 FOTOS TIPO CARNET\n\n<i>Nota: Los Originales son para su vista y devolución</i>\n\n<u>Para mayor información respecto a los recaudos, modalidades de estudios e información académica:</u>\n\nComunicate a los números <b>02418212195</b> o 96 Ext. 3 (Dpto. de Control de Estudios) , llamada y WhatsApp al <b>04124557788 </b>de Lunes a Viernes de 7:30 a 12 y de 1 a 3:30 Sábado de 8 a 12\n\n<u>Para información administrativa</u> (fechas de pago,deudas, aranceles, etc.),al departamento  de administración  al <b>04123307295</b> de Lunes a Viernes de 7:30 a 12 y de 1 a 3:30\nSábado de 8 a 12\n\n<u>También puedes escribir al correo:</u> <b>olceee.val.iutepal@gmail.com</b>, solicitar planilla de inscripción (al correo y números de WhatsApp) y enviar los recaudos escaneados únicamente al correo."
+            ],
+            "buttons": [
+                {
+                    "text": "Volver",
+                    "value": "hola"
+                }
+            ]
+        },
+        {
+            "tag": "Horarios",
+            "patterns": [
+                "horarios",
+                "horarios de clases",
+                "a que hora dan clases"
+            ],
+            "responses": [
+                "<b>Horarios:</b>\n\n<u>Presencial:</u>\nDe lunes a viernes\nHora: <b>7:40 am a 1:05 pm</b>\n\nNocturno\n<b>5:40 pm a 9:00 pm</b>\n\n<u>100% Virtual:</u>\n<b>Hora:  5:10 pm a 9:10 pm</b>\n\n<u>Bimodal o Semipresencial:</u>\n      <i>*Presencial (materias prácticas)</i>\n             <b>Sábados de 7:40 am a 5:50 pm.</b> \n      <u> *Online según carrera (materias teóricas): </u>\n             <b>De lunes a viernes de 5:10 pm a 9:10 pm</b>"
+            ],
+            "buttons": [
+                {
+                    "text": "Volver",
+                    "value": "hola"
+                }
+            ]
+        },
+        {
+            "tag": "General",
+            "patterns": [
+                "informacion general",
+                "general",
+                "info"
+            ],
+            "responses": [
+                "<b>Información General</b><br>Si decides estudiar Adm. de empresas o Adm. mención contabilidad y finanzas por ser estas carreras comunes en sus pensum de estudios hasta el 4to semestre, cursando 2 periodos adicionales puedes obtener ambos títulos, es decir en menos de 3 años tendrías 2 títulos.<br><br>El caso anterior aplica entre  producción  Industrial  y control de calidad  por ser estas carreras comunes en sus pensum de estudios hasta el 4to semestre<br><br>Si deseas cursar enfermeria puedes proseguir tus estudios a nivel de licenciatura con el programa de profesionalización <b>ULA-IUTEPAL</b> (en nuestras instalaciones) <br><br>También puedes seguir tus estudios a nivel de Lic. ó Ing. en la <b>Universidad José Antonio Paez</b> en las carreras de Adm. de empresas,  Adm. mención contabilidad y finanzas,  producción industrial,  informática,  preescolar,  electrónica<br><br><u>Contamos con rutas de transporte exclusivas para nuestros estudiantes</u><br><br><u>Tenemos seguro contra accidentes personales dentro y fuera de la institución</u>"
+            ],
+            "buttons": [
+                {
+                    "text": "Volver",
+                    "value": "hola"
+                }
+            ]
+        }
+    ]
+}

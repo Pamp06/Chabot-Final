@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chatbot Paulina</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Botón para abrir/cerrar el chat -->
+    <div class="chatbox__button">
+      <button id="buttonchat" aria-label="Abrir chat">
+        <img src="/static/images/chatbox-icon.svg" alt="Ícono de chat" />
+      </button>
+    </div>
+
+    <!-- Ventana del chat -->
+    <div id="chatwindow" class="container">
+      <div class="chatbox">
+        <div class="chatbox__support">
+          <!-- Encabezado del chat -->
+          <div class="chatbox__header">
+            <div class="chatbox__image--header">
+              <img
+                src="/static/images/Iutepal.jpg"
+                height="45"
+                width="45"
+                alt="Imagen del chatbot Paulina"
+                loading="lazy"
+              />
+            </div>
+            <div class="chatbox__content--header">
+              <h4 class="chatbox__heading--header">ChatBot Paulina</h4>
+              <p class="chatbox__description--header">
+                ¡Hola! 👋 mi nombre es Paulina asistente virtual del IUTEPAL 🤖
+              </p>
+            </div>
+          </div>
+
+          <!-- Área de mensajes -->
+          <div class="chatbox__messages">
+            <div id="chat-container" class="chatbox__messages--content"></div>
+          </div>
+
+          <!-- Aquí se mostrarán los botones dinámicos -->
+          <div id="botones-container" class="botones-opciones"></div>
+
+          <!-- Pie del chat -->
+          <div class="chatbox__footer">
+            <input
+              type="text"
+              id="user-input"
+              placeholder="Escriba un mensaje..."
+              aria-label="Escriba su mensaje"
+            />
+            <button class="chatbox__send--footer send__button" id="send-button">
+              Enviar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts para el funcionamiento del chat -->
+    <script>
+      // Configuración global para las rutas
+      $SCRIPT_ROOT = {{ request.script_root|tojson }};
+      const chatConfig = {
+          botName: "Paulina",
+          userMessageClass: "messages__item--operator",
+          botMessageClass: "messages__item--visitor",
+          typingClass: "messages__item--typing"
+      };
+    </script>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+  </body>
+</html>
